@@ -1,17 +1,13 @@
 #main.py
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
-import pandas as pd
 
 
 
 app = FastAPI()
 
 @app.get("/", response_class=HTMLResponse)
-async def show_weather():
-
-
-    # HTML 페이지 생성
+async def show_map():
     html_content = """
     <!DOCTYPE html>
 <html>
